@@ -11522,7 +11522,7 @@ footer.footer-white .footer-bottom a {
 }
 .page-content {
     margin-top: 0;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 .content-area {
     padding-top: 60px;
@@ -13003,7 +13003,7 @@ ol.commentlist li .star-rating {
 		padding-top: 30px;
 	}
 	.page-content{
-		padding-bottom: 30px;
+		/* padding-bottom: 30px; */
 	}
 	.footer-top{
 		padding-top: 40px;
