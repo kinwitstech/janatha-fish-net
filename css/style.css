@@ -14264,7 +14264,7 @@ ol.commentlist li .star-rating {
 
 .slide-image {
   width: 100%;
-  max-width: 600px;
+  /* max-width: 600px; */
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
@@ -14291,4 +14291,8 @@ ol.commentlist li .star-rating {
   .hide-mobile {
     display: none;
   }
+}
+
+.jumbotron-btn:hover {
+  background: var(--color-hover) !important;
 }

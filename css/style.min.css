@@ -6156,7 +6156,7 @@ a {
   --color-hover: #555555;
 }
 .blue {
-  --color-hover: #2779B2;
+  --color-hover: #2779b2;
 }
 .pink {
   --color-hover: #ef2c75;
@@ -13167,13 +13167,14 @@ ol.commentlist li .star-rating {
 .slide-image {
   width: 100%;
   max-width: 600px;
+  height: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 12px;
 }
 
 .about-h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: italic;
 }
 
@@ -13193,4 +13194,8 @@ ol.commentlist li .star-rating {
   .hide-mobile {
     display: none;
   }
+}
+
+.jumbotron-btn:hover {
+  background: var(--color-hover) !important;
 }
