@@ -75,8 +75,8 @@
             <div class="container clearfix">
               <!-- website logo -->
               <div class="logo-header mostion logo-dark">
-                <a href="index.html"><img src="images/JFNLogo.png" alt="" /></a>
-                <a href="index.html"><img src="images/JFNLogoTxt.jpg" alt="" /></a>
+                <a href="index.html"><img src="images/JFNLogo.png" alt="Janatha logo" style="width: 64px; height: 64px;"/></a>
+                <a href="index.html"><img src="images/JFNLogoTxt.jpg" alt="Janatha logo text"/></a>
               </div>
               <!-- nav toggle button -->
               <button
@@ -124,8 +124,8 @@
               >
                 <div class="logo-header d-md-block d-lg-none">
                   <a href="index.html"
-                    ><img src="images/logo-2.png" alt=""
-                  /></a>
+                    ><img src="images/JFNLogoTxt.jpg" alt="JFN logo text"/>
+                  </a>
                 </div>
                 <ul class="nav navbar-nav">
                   <li class="active has-mega-menu">
@@ -427,12 +427,13 @@
                   class="rev_slider fullscreenbanner"
                   style="display: none"
                   data-version="5.4.7.2"
+                  data-lazyload="none"
                 >
                   <ul>
                     <!-- SLIDE  -->
                     <li
                       data-index="rs-100"
-                      data-transition="slideoververtical"
+                      data-transition="fade"
                       data-slotamount="default"
                       data-hideafterloop="0"
                       data-hideslideonmobile="off"
@@ -442,7 +443,7 @@
                       data-thumb=""
                       data-rotate="0"
                       data-saveperformance="off"
-                      data-title="Slide"
+                      data-title="Slide1"
                       data-param1=""
                       data-param2=""
                       data-param3=""
@@ -454,6 +455,7 @@
                       data-param9=""
                       data-param10=""
                       data-description=""
+                      data-delay="6000"
                     >
                       <!-- MAIN IMAGE -->
                       <!-- <img
@@ -476,6 +478,15 @@
                         class="rev-slidebg"
                         data-no-retina
                       /> -->
+                      <img
+                        src="images/banner/vid3-Image.jpg"
+                        alt="Poster"
+                        class="rev-slidebg"
+                        data-bgfit="cover"
+                        data-bgposition="center center"
+                        data-no-retina
+                        data-duration="100"
+                      />
                       <div class="rs-background-video-layer" 
 										data-forcerewind="on" 
 										data-volume="mute" 
@@ -514,7 +525,7 @@
                         data-paddingleft="[0,0,0,0]"
                         style="
                           z-index: 2;
-                          background-color: rgba(0, 0, 0, 0.1);
+                          background-color: rgba(0, 0, 0, 0);
                           border-color: rgba(0, 0, 0, 0);
                           border-width: 0px;
                           background-image: url(images/overlay/rrdiagonal-line.png);
@@ -547,10 +558,10 @@
                       <div
                         class="tp-caption"
                         id="slide-100-layer-3"
-                        data-x="['center','center','center','center']"
-                        data-hoffset="['-90','-200','0','0']"
+                        data-x="['left','left','center','center']"
+                        data-hoffset="['0','0','0','0']"
                         data-y="['middle','middle','middle','middle']"
-                        data-voffset="['-60','-20','-100','-90']"
+                        data-voffset="['-80','-80','-100','-90']"
                         data-fontsize="['65','40','40','30']"
                         data-lineheight="['80','40','40','30']"
                         data-letterspacing="['2','2','2','2']"
@@ -558,8 +569,8 @@
                         data-height="none"
                         data-whitespace="['normal','nowrap','normal','normal']"
                         data-type="text"
-                        data-responsive_offset="off"
-                        data-responsive="off"
+                        data-responsive_offset="on"
+                        data-responsive="on"
                         data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
                         data-textAlign="['left','left','center','center']"
                         data-paddingtop="[0,0,0,0]"
@@ -581,16 +592,16 @@
                       <!-- LAYER NR. 3 -->
                       <div class="tp-caption" 
                         id="slide-100-layer-4" 
-                        data-x="['center','center','center','center']" data-hoffset="['-265','-165','0','0']" 
+                        data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" 
                         data-y="['middle','middle','middle','middle']" data-voffset="['50','0','-5','00']" 
                         data-fontsize="['18','16','14','14']"
-                        data-lineheight="['30','30','26','26']"
-                        data-width="['640','481','500','300']"
+                        data-lineheight="['30','28','26','24']"
+                        data-width="['640','480','460','320']"
                         data-height="none"
                         data-whitespace="normal"
                         data-type="text" 
-                        data-responsive_offset="off" 
-                        data-responsive="off"
+                        data-responsive_offset="on" 
+                        data-responsive="on"
                         data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
                         data-textAlign="['left','left','center','center']"
                         data-paddingtop="[0,0,0,0]"
@@ -600,49 +611,53 @@
 										    style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;"> Engineering innovative fishing net solutions that set new standards in durability, efficiency, and sustainability
 									</div>
                       <!-- LAYER NR. 5 -->
-                      <a class="tp-caption rev-btn tc-btnshadow bg-primary tp-rs-menulink btnhover16" 
-										href="about-1.html" target="_blank"			 
-										id="slide-100-layer-5" 
-										data-x="['center','center','center','center']" data-hoffset="['-510','-335','-100','-80']" 
-										data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']" 
-										data-lineheight="['18','18','18','18']"
-										data-whitespace="nowrap"
-										data-type="button" 
-										data-actions=''
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-										data-textAlign="['center','center','center','center']"
-										data-paddingtop="[15,15,15,10]"
-										data-paddingright="[30,30,30,20]"
-										data-paddingbottom="[15,15,15,10]"
-										data-paddingleft="[30,30,30,20]"
-										style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> About Us
-									</a>
-                      <!-- LAYER NR. 5 -->
-                      <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary btnhover16" 
-										href="hdpenets.html" target="_blank"			 
-										id="slide-100-layer-6"  
-										data-x="['center','center','center','center']" data-hoffset="['-340','-160','70','70']" 
-										data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']"  
-										data-lineheight="['18','18','18','18']"
-										data-whitespace="nowrap"
-										data-type="button" 
-										data-actions=''
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-										data-textAlign="['center','center','center','center']"
-										data-paddingtop="[15,15,15,10]"
-										data-paddingright="[30,30,30,20]"
-										data-paddingbottom="[15,15,15,10]"
-										data-paddingleft="[30,30,30,20]"
-										style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> Our Products
-									</a>
+                      <div class="tp-caption rev-btn tc-btnshadow bg-primary tp-rs-menulink btnhover16 jumbotron-btn"
+                          id="slide-100-layer-5"
+                          data-x="['left','left','center','center']" data-hoffset="['0','0','-100','-80']"
+                          data-y="['middle','middle','middle','middle']" data-voffset="['150','90','80','90']"
+                          data-lineheight="['18','18','18','18']"
+                          data-whitespace="nowrap"
+                          data-type="button"
+                          data-actions=''
+                          data-responsive_offset="on"
+                          data-responsive="on"
+                          data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
+                          data-textAlign="['center','center','center','center']"
+                          data-paddingtop="[15,15,15,10]"
+                          data-paddingright="[30,30,30,20]"
+                          data-paddingbottom="[15,15,15,10]"
+                          data-paddingleft="[30,30,30,20]"
+                          style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); text-transform: uppercase;">
+                          <a href="about-1.html" target="_blank" style="display:inline-block; width:100%; height:100%; color:inherit; text-decoration:none;">
+                              About Us
+                          </a>
+                      </div>
+                      <!-- LAYER NR. 6 -->
+                      <div class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary btnhover16 jumbotron-btn"
+                          id="slide-100-layer-6"
+                          data-x="['center','center','center','center']" data-hoffset="['-370','-230','70','70']"
+                          data-y="['middle','middle','middle','middle']" data-voffset="['150','90','80','90']"
+                          data-lineheight="['18','18','18','18']"
+                          data-whitespace="nowrap"
+                          data-type="button"
+                          data-actions=''
+                          data-responsive_offset="on"
+                          data-responsive="on"
+                          data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
+                          data-textAlign="['center','center','center','center']"
+                          data-paddingtop="[15,15,15,10]"
+                          data-paddingright="[30,30,30,20]"
+                          data-paddingbottom="[15,15,15,10]"
+                          data-paddingleft="[30,30,30,20]"
+                          style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); text-transform: uppercase;">
+                          <a href="hdpenets.html" target="_blank" style="display:inline-block; width:100%; height:100%; color:inherit; text-decoration:none;">
+                              Our Products
+                          </a>
+                      </div>
                     </li>
                     <li
                       data-index="rs-200"
-                      data-transition="fadethroughdark"
+                      data-transition="fade"
                       data-slotamount="default"
                       data-hideafterloop="0"
                       data-hideslideonmobile="off"
@@ -652,7 +667,7 @@
                       data-thumb=""
                       data-rotate="0"
                       data-saveperformance="off"
-                      data-title="Slide"
+                      data-title="Slide2"
                       data-param1=""
                       data-param2=""
                       data-param3=""
@@ -664,6 +679,7 @@
                       data-param9=""
                       data-param10=""
                       data-description=""
+                      data-delay="30000"
                     >
                       <!-- MAIN IMAGE -->
                       <!-- <img
@@ -686,6 +702,15 @@
                         class="rev-slidebg"
                         data-no-retina
                       /> -->
+                      <img
+                        src="images/banner/vid_com-Image.png"
+                        alt="Poster"
+                        class="rev-slidebg"
+                        data-bgfit="cover"
+                        data-bgposition="center center"
+                        data-no-retina
+                        data-duration="100"
+                      />
                       <div class="rs-background-video-layer" 
 										data-forcerewind="on" 
 										data-volume="mute" 
@@ -723,7 +748,7 @@
                         data-paddingleft="[0,0,0,0]"
                         style="
                           z-index: 2;
-                          background-color: rgba(0, 0, 0, 0.1);
+                          background-color: rgba(0, 0, 0, 0);
                           border-color: rgba(0, 0, 0, 0);
                           border-width: 0px;
                           background-image: url(images/overlay/rrdiagonal-line.png);
@@ -741,8 +766,8 @@
                         data-whitespace="nowrap"
                         data-type="shape"
                         data-basealign="slide"
-                        data-responsive_offset="off"
-                        data-responsive="off"
+                        data-responsive_offset="on"
+                        data-responsive="on"
                         data-frames='[{"delay":10,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeIn"}]'
                         data-textAlign="['inherit','inherit','inherit','inherit']"
                         data-paddingtop="[0,0,0,0]"
@@ -754,10 +779,10 @@
                       <div
                         class="tp-caption"
                         id="slide-200-layer-3"
-                        data-x="['center','center','center','center']"
-                        data-hoffset="['-90','-200','0','0']"
+                        data-x="['left','left','center','center']"
+                        data-hoffset="['0','0','0','0']"
                         data-y="['middle','middle','middle','middle']"
-                        data-voffset="['-60','-20','-100','-90']"
+                        data-voffset="['-80','-80','-100','-90']"
                         data-fontsize="['65','40','40','30']"
                         data-lineheight="['80','40','40','30']"
                         data-letterspacing="['2','2','2','2']"
@@ -765,8 +790,8 @@
                         data-height="none"
                         data-whitespace="['normal','nowrap','normal','normal']"
                         data-type="text"
-                        data-responsive_offset="off"
-                        data-responsive="off"
+                        data-responsive_offset="on"
+                        data-responsive="on"
                         data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
                         data-textAlign="['left','left','center','center']"
                         data-paddingtop="[0,0,0,0]"
@@ -788,16 +813,16 @@
                       <!-- LAYER NR. 3 -->
                       <div class="tp-caption" 
                         id="slide-200-layer-4" 
-                        data-x="['center','center','center','center']" data-hoffset="['-265','-165','0','0']" 
+                        data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']"
                         data-y="['middle','middle','middle','middle']" data-voffset="['50','0','-5','00']" 
                         data-fontsize="['18','16','18','14']"
-                        data-lineheight="['30','30','25','22']"
-                        data-width="['640','481','500','300']"
+                        data-lineheight="['30','28','26','24']"
+                        data-width="['640','480','460','320']"
                         data-height="none"
                         data-whitespace="normal"
                         data-type="text" 
-                        data-responsive_offset="off" 
-                        data-responsive="off"
+                        data-responsive_offset="on" 
+                        data-responsive="on"
                         data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
                         data-textAlign="['left','left','center','center']"
                         data-paddingtop="[0,0,0,0]"
@@ -807,49 +832,54 @@
 										    style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">Fostering enhanced success through teamwork, collaboration, and a shared commitment to delivering top-quality fishing net solutions
 									</div>
                       <!-- LAYER NR. 5 -->
-                      <a class="tp-caption rev-btn tc-btnshadow bg-primary tp-rs-menulink btnhover16" 
-										href="about-1.html" target="_blank"			 
-										id="slide-100-layer-5" 
-										data-x="['center','center','center','center']" data-hoffset="['-510','-335','-100','-80']" 
-										data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']" 
-										data-lineheight="['18','18','18','18']"
-										data-whitespace="nowrap"
-										data-type="button" 
-										data-actions=''
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-										data-textAlign="['center','center','center','center']"
-										data-paddingtop="[15,15,15,10]"
-										data-paddingright="[30,30,30,20]"
-										data-paddingbottom="[15,15,15,10]"
-										data-paddingleft="[30,30,30,20]"
-										style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> About Us
-									</a>
-                      <!-- LAYER NR. 5 -->
-                      <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary btnhover16" 
-										href="hdpenets.html" target="_blank"			 
-										id="slide-100-layer-6"  
-										data-x="['center','center','center','center']" data-hoffset="['-340','-160','70','70']" 
-										data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']"  
-										data-lineheight="['18','18','18','18']"
-										data-whitespace="nowrap"
-										data-type="button" 
-										data-actions=''
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-										data-textAlign="['center','center','center','center']"
-										data-paddingtop="[15,15,15,10]"
-										data-paddingright="[30,30,30,20]"
-										data-paddingbottom="[15,15,15,10]"
-										data-paddingleft="[30,30,30,20]"
-										style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> Our Products
-									</a>
+                      <div class="tp-caption rev-btn tc-btnshadow bg-primary tp-rs-menulink btnhover16 jumbotron-btn"
+                          id="slide-200-layer-5"
+                          data-x="['left','left','center','center']" data-hoffset="['0','0','-100','-80']"
+                          data-y="['middle','middle','middle','middle']" data-voffset="['150','90','80','90']"
+                          data-lineheight="['18','18','18','18']"
+                          data-whitespace="nowrap"
+                          data-type="button"
+                          data-actions=''
+                          data-responsive_offset="on"
+                          data-responsive="on"
+                          data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
+                          data-textAlign="['center','center','center','center']"
+                          data-paddingtop="[15,15,15,10]"
+                          data-paddingright="[30,30,30,20]"
+                          data-paddingbottom="[15,15,15,10]"
+                          data-paddingleft="[30,30,30,20]"
+                          style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); text-transform: uppercase;">
+                          <a href="about-1.html" target="_blank" style="display:inline-block; width:100%; height:100%; color:inherit; text-decoration:none;">
+                              About Us
+                          </a>
+                      </div>
+
+                      <!-- LAYER NR. 6 -->
+                      <div class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary btnhover16 jumbotron-btn"
+                          id="slide-200-layer-6"
+                          data-x="['center','center','center','center']" data-hoffset="['-370','-230','70','70']"
+                          data-y="['middle','middle','middle','middle']" data-voffset="['150','90','80','90']"
+                          data-lineheight="['18','18','18','18']"
+                          data-whitespace="nowrap"
+                          data-type="button"
+                          data-actions=''
+                          data-responsive_offset="on"
+                          data-responsive="on"
+                          data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
+                          data-textAlign="['center','center','center','center']"
+                          data-paddingtop="[15,15,15,10]"
+                          data-paddingright="[30,30,30,20]"
+                          data-paddingbottom="[15,15,15,10]"
+                          data-paddingleft="[30,30,30,20]"
+                          style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); text-transform: uppercase;">
+                          <a href="hdpenets.html" target="_blank" style="display:inline-block; width:100%; height:100%; color:inherit; text-decoration:none;">
+                              Our Products
+                          </a>
+                      </div>
                     </li>
                     <li
                       data-index="rs-300"
-                      data-transition="fadethroughdark"
+                      data-transition="fade"
                       data-slotamount="default"
                       data-hideafterloop="0"
                       data-hideslideonmobile="off"
@@ -859,7 +889,7 @@
                       data-thumb=""
                       data-rotate="0"
                       data-saveperformance="off"
-                      data-title="Slide"
+                      data-title="Slide3"
                       data-param1=""
                       data-param2=""
                       data-param3=""
@@ -871,6 +901,7 @@
                       data-param9=""
                       data-param10=""
                       data-description=""
+                      data-delay="7000"
                     >
                       <!-- MAIN IMAGE -->
                       <!-- <img
@@ -893,6 +924,15 @@
                         class="rev-slidebg"
                         data-no-retina
                       /> -->
+                      <img
+                        src="images/banner/vid6-Image.jpg"
+                        alt="Poster"
+                        class="rev-slidebg"
+                        data-bgfit="cover"
+                        data-bgposition="center center"
+                        data-no-retina
+                        data-duration="100"
+                      />
                       <div class="rs-background-video-layer" 
                       data-forcerewind="on" 
                       data-volume="mute" 
@@ -910,7 +950,7 @@
                       <!-- LAYER NR. 1 -->
                       <div
                         class="tp-caption tp-shape tp-shapewrapper"
-                        id="slide-200-layer"
+                        id="slide-300-layer"
                         data-x="['center','center','center','center']"
                         data-hoffset="['0','0','0','0']"
                         data-y="['middle','middle','middle','middle']"
@@ -930,7 +970,7 @@
                         data-paddingleft="[0,0,0,0]"
                         style="
                           z-index: 2;
-                          background-color: rgba(0, 0, 0, 0.1);
+                          background-color: rgba(0, 0, 0, 0);
                           border-color: rgba(0, 0, 0, 0);
                           border-width: 0px;
                           background-image: url(images/overlay/rrdiagonal-line.png);
@@ -938,7 +978,7 @@
                       ></div>
                       <div
                         class="tp-caption tp-shape tp-shapewrapper ov-tp"
-                        id="slide-200-layer-1"
+                        id="slide-300-layer-1"
                         data-x="['center','center','center','center']"
                         data-hoffset="['0','0','0','0']"
                         data-y="['middle','middle','middle','middle']"
@@ -948,8 +988,8 @@
                         data-whitespace="nowrap"
                         data-type="shape"
                         data-basealign="slide"
-                        data-responsive_offset="off"
-                        data-responsive="off"
+                        data-responsive_offset="on"
+                        data-responsive="on"
                         data-frames='[{"delay":10,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeIn"}]'
                         data-textAlign="['inherit','inherit','inherit','inherit']"
                         data-paddingtop="[0,0,0,0]"
@@ -960,20 +1000,20 @@
                       ></div>
                       <div
                         class="tp-caption"
-                        id="slide-200-layer-3"
-                        data-x="['center','center','center','center']"
-                        data-hoffset="['-90','-200','0','0']"
+                        id="slide-300-layer-3"
+                        data-x="['left','left','center','center']"
+                        data-hoffset="['0','0','0','0']"
                         data-y="['middle','middle','middle','middle']"
-                        data-voffset="['-70','-20','-100','-90']"
+                        data-voffset="['-80','-80','-100','-90']"
                         data-fontsize="['65','40','40','30']"
                         data-lineheight="['80','40','40','30']"
                         data-letterspacing="['2','2','2','2']"
-                        data-width="['1000','none','768','360']"
+                        data-width="['1000','800','768','360']"
                         data-height="none"
                         data-whitespace="['normal','nowrap','normal','normal']"
                         data-type="text"
-                        data-responsive_offset="off"
-                        data-responsive="off"
+                        data-responsive_offset="on"
+                        data-responsive="on"
                         data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
                         data-textAlign="['left','left','center','center']"
                         data-paddingtop="[0,0,0,0]"
@@ -994,17 +1034,17 @@
                       </div>
                       <!-- LAYER NR. 3 -->
                       <div class="tp-caption" 
-                        id="slide-200-layer-4" 
-                        data-x="['center','center','center','center']" data-hoffset="['-265','-165','0','0']" 
+                        id="slide-300-layer-4" 
+                        data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']"
                         data-y="['middle','middle','middle','middle']" data-voffset="['50','0','-5','00']" 
-                        data-fontsize="['18','16','18','14']"
-                        data-lineheight="['30','30','25','22']"
-                        data-width="['640','481','500','300']"
+                        data-fontsize="['18','16','14','14']"
+                        data-lineheight="['30','28','26','24']"
+                        data-width="['640','480','460','320']"
                         data-height="none"
                         data-whitespace="normal"
                         data-type="text" 
-                        data-responsive_offset="off" 
-                        data-responsive="off"
+                        data-responsive_offset="on" 
+                        data-responsive="on"
                         data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;","color":"#000000","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","color":"#000000","to":"opacity:0;","ease":"nothing"}]'
                         data-textAlign="['left','left','center','center']"
                         data-paddingtop="[0,0,0,0]"
@@ -1014,45 +1054,50 @@
 										    style="z-index: 7; min-width: 640px; max-width: 640px; font-weight: 700; font-size: 18px; line-height: 30px; font-weight: 400; color: #fff; font-family: 'Poppins',sans-serif;">With future-ready fibers, we are setting new standards in innovation, offering advanced solutions that drive performance and sustainability across diverse industries
 									</div>
                       <!-- LAYER NR. 5 -->
-                      <a class="tp-caption rev-btn tc-btnshadow bg-primary tp-rs-menulink btnhover16" 
-										href="about-1.html" target="_blank"			 
-										id="slide-100-layer-5" 
-										data-x="['center','center','center','center']" data-hoffset="['-510','-335','-100','-80']" 
-										data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']" 
-										data-lineheight="['18','18','18','18']"
-										data-whitespace="nowrap"
-										data-type="button" 
-										data-actions=''
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-										data-textAlign="['center','center','center','center']"
-										data-paddingtop="[15,15,15,10]"
-										data-paddingright="[30,30,30,20]"
-										data-paddingbottom="[15,15,15,10]"
-										data-paddingleft="[30,30,30,20]"
-										style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> About Us
-									</a>
-                      <!-- LAYER NR. 5 -->
-                      <a class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary btnhover16" 
-										href="hdpenets.html" target="_blank"			 
-										id="slide-100-layer-6"  
-										data-x="['center','center','center','center']" data-hoffset="['-340','-160','70','70']" 
-										data-y="['middle','middle','middle','middle']" data-voffset="['160','90','80','90']"  
-										data-lineheight="['18','18','18','18']"
-										data-whitespace="nowrap"
-										data-type="button" 
-										data-actions=''
-										data-responsive_offset="off" 
-										data-responsive="off"
-										data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
-										data-textAlign="['center','center','center','center']"
-										data-paddingtop="[15,15,15,10]"
-										data-paddingright="[30,30,30,20]"
-										data-paddingbottom="[15,15,15,10]"
-										data-paddingleft="[30,30,30,20]"
-										style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1);  text-transform: uppercase;"> Our Products
-									</a>
+                      <div class="tp-caption rev-btn tc-btnshadow bg-primary tp-rs-menulink btnhover16 jumbotron-btn"
+                          id="slide-300-layer-5"
+                          data-x="['left','left','center','center']" data-hoffset="['0','0','-100','-80']"
+                          data-y="['middle','middle','middle','middle']" data-voffset="['150','90','80','90']"
+                          data-lineheight="['18','18','18','18']"
+                          data-whitespace="nowrap"
+                          data-type="button"
+                          data-actions=''
+                          data-responsive_offset="on"
+                          data-responsive="on"
+                          data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
+                          data-textAlign="['center','center','center','center']"
+                          data-paddingtop="[15,15,15,10]"
+                          data-paddingright="[30,30,30,20]"
+                          data-paddingbottom="[15,15,15,10]"
+                          data-paddingleft="[30,30,30,20]"
+                          style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); text-transform: uppercase;">
+                          <a href="about-1.html" target="_blank" style="display:inline-block; width:100%; height:100%; color:inherit; text-decoration:none;">
+                              About Us
+                          </a>
+                      </div>
+
+                      <!-- LAYER NR. 6 -->
+                      <div class="tp-caption rev-btn tc-btnshadow tp-rs-menulink bg-primary btnhover16 jumbotron-btn"
+                          id="slide-300-layer-6"
+                          data-x="['center','center','center','center']" data-hoffset="['-370','-230','70','70']"
+                          data-y="['middle','middle','middle','middle']" data-voffset="['150','90','80','90']"
+                          data-lineheight="['18','18','18','18']"
+                          data-whitespace="nowrap"
+                          data-type="button"
+                          data-actions=''
+                          data-responsive_offset="on"
+                          data-responsive="on"
+                          data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"x:-50px;z:0;rX:0;rY:0;rZ:0;sX:1.1;sY:1.1;skX:0;skY:0;opacity:0;fbr:100;","bgcolor":"#000000","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","bgcolor":"#000000","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:90%;","style":"c:rgba(255,255,255,1);"}]'
+                          data-textAlign="['center','center','center','center']"
+                          data-paddingtop="[15,15,15,10]"
+                          data-paddingright="[30,30,30,20]"
+                          data-paddingbottom="[15,15,15,10]"
+                          data-paddingleft="[30,30,30,20]"
+                          style="z-index: 8;letter-spacing: 2px; white-space: nowrap; font-size: 12px; font-weight: 600; color: rgba(255,255,255,1); text-transform: uppercase;">
+                          <a href="hdpenets.html" target="_blank" style="display:inline-block; width:100%; height:100%; color:inherit; text-decoration:none;">
+                              Our Products
+                          </a>
+                      </div>
                     </li>
                   </ul>
                   <div
@@ -1104,7 +1149,7 @@
               <div id="sync2" class="owl-carousel owl-theme owl-none owl-dots-none project-list">
 							<div class="item">
 								<div class="project-owbx">
-									<i class="flaticon-robot-arm"></i>
+									<i class="ti ti-agenda"></i>
 									<h4 class="title">Our Story</h4>
 								</div>
 							</div>
@@ -1116,13 +1161,13 @@
 							</div>
 							<div class="item">
 								<div class="project-owbx active">
-									<i class="flaticon-fuel-station"></i>
+									<i class="flaticon-product"></i>
 									<h4 class="title">Our Products</h4>
 								</div>
 							</div>
 							<div class="item">
 								<div class="project-owbx">
-									<i class="flaticon-engineer-1"></i>
+									<i class="flaticon-factory-2"></i>
 									<h4 class="title">Our Parent Company	</h4>
 								</div>
 							</div>
@@ -1134,8 +1179,8 @@
 							</div> -->
                 </div>
                   <div id="sync1" class="owl-carousel owl-theme owl-btn-center-lr m-b5 owl-dots-none owl-btn-3 primary">
-                    <div class="item">
-                      <div class="row align-items-center">
+                    <div class="item" style="padding: 1rem 2rem 0 2rem; display: flex;align-items: stretch;height: 100%;">
+                      <div class="row align-items-stretch">
                         <div class="col-lg-6 col-md-6 m-b30">
                           <div class="our-story">
                             <span>OUR STORY</span>
@@ -1155,16 +1200,16 @@
                         <div class="col-lg-6 col-md-6 m-b30">
                           <img
                             src="images/about/mending.jpeg"
-                            class="radius-sm"
+                            class="slide-image radius-sm"
                             alt=""
                           />
                         </div>
                       </div>
                     </div>
-                    <div class="item">
-                      <div class="row align-items-center">
+                    <div class="item" style="padding: 1rem 2rem 0 2rem;display: flex;align-items: stretch;height: 100%;">
+                      <div class="row align-items-stretch">
                         <div class="col-lg-6 col-md-6 m-b30">
-                          <img src="images/about/Fishnet_resized.jpeg" class="radius-sm" alt="">
+                          <img src="images/about/Fishnet_resized.jpeg" class="radius-sm slide-image" alt="">
                         </div>
                         <div class="col-lg-6 col-md-6 m-b30">
                           <div class="our-story ">
@@ -1179,8 +1224,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="item">
-                      <div class="row align-items-center">
+                    <div class="item" style="padding: 1rem 2rem 0 2rem;display: flex;align-items: stretch;height: 100%;">
+                      <div class="row align-items-stretch" style="display: flex;">
                         <div class="col-lg-6 col-md-6 m-b30">
                           <div class="our-story">
                             <span>OUR PRODUCTS</span>
@@ -1200,16 +1245,16 @@
                         <div class="col-lg-6 col-md-6 m-b30">
                           <img
                             src="images/about/Floats.jpeg"
-                            class="radius-sm"
+                            class="radius-sm slide-image"
                             alt=""
                           />
                         </div>
                       </div>
                     </div>
-                  <div class="item">
-                    <div class="row align-items-center">
+                  <div class="item" style="padding: 1rem 2rem 0 2rem;display: flex;align-items: stretch;height: 100%;">
+                    <div class="row align-items-stretch">
                       <div class="col-lg-6 col-md-6 m-b30">
-                        <img src="images/about/Parent.png" class="radius-sm" alt="">
+                        <img src="images/about/Parent.png" class="radius-sm slide-image" alt="">
                       </div>
                       <div class="col-lg-6 col-md-6 m-b30">
                         <div class="our-story content-bx1">

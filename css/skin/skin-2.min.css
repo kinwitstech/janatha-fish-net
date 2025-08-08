@@ -182,7 +182,7 @@ button.scroltop {
 .site-button:active,
 .site-button:focus,
 .site-button:hover {
-    background-color: #2779B2
+    background-color: var(--color-hover)
 }
 
 .about-us .dlab-tabs .nav-tabs li.active {
@@ -366,29 +366,27 @@ input[type=radio]+label:hover:before {
 
 a.text-primary:hover,
 button.scroltop.white {
-    color: #e7232d !important
+    color: var(--color-primary) !important
 }
 
 .overlay-icon .check-km i.icon-bx-xs,
 .site-footer .footer-bottom a:hover,
 .text-primary,
 footer .widget_services ul li a:hover {
-    color: #961460
-
- !important
+    color: var(--color-primary) !important
 }
 
 .bg-primary,
 .pagination-bx.gray .pagination>li.active>a,
 .pagination-bx.gray .pagination>li>a:hover {
-    background-color: #961460
+    background-color: var(--color-primary)
 
  !important
 }
 
 a.bg-primary:focus,
 a.bg-primary:hover {
-    background-color: #e7232d !important
+    background-color: var(--color-hover) !important
 }
 
 .about-year span,

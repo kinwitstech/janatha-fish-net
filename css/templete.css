@@ -1948,11 +1948,11 @@ ol.commentlist li .meta span {
 }
 .widget_getintuch-pro-details .pro-details i {
     background-color: var(--color-primary);
-    height: 40px;
-    width: 40px;
+    /* height: 40px;
+    width: 40px; */
     color: #fff;
     border-radius: 50px;
-    line-height: 40px;
+    /* line-height: 40px; */
     font-size: 16px;
     top: 0;
 }
@@ -5587,6 +5587,7 @@ HOME 5 Box Header
 	width: 60px;
 	line-height: 60px;
 	font-size: 24px;
+	border-radius: 25%;
 }
 .testimonial-box-carousel .owl-nav .owl-prev{
 	left: 140px;

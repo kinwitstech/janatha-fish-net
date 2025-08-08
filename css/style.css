@@ -298,7 +298,7 @@ strong {
 }
 .bg-primary,
 .bg-primary a:hover{ 
-	color:#fff; 
+	color: var(--color-hover); 
 }
 /*text align*/
 
@@ -3035,8 +3035,8 @@ blockquote:before {
 	font-weight: 600;
 	display: inline-block;
 	position: relative;
-    border:1px solid rgba(0,0,0,0.10);
-    border-width: 0 0 0 1px;	
+    /* border:1px solid rgba(0,0,0,0.10); */
+    /* border-width: 0 0 0 1px;	 */
 }
 .header-nav .nav > li > a.nav-link{
 	padding-left:12px;
@@ -3865,7 +3865,7 @@ blockquote:before {
 	.header.dark .header-nav .nav > li > a,
 	.header.header-transparent .main-bar .header-nav .nav > li > a,
 	.header.dark .main-bar .header-nav .nav > li > a{
-		border: 1px solid rgba(255,255,255,0.10);
+		/* border: 1px solid rgba(255,255,255,0.10); */
 		border-width: 0 0 0 1px;
 	}
 	.header.header-transparent .header-nav .nav > li:last-child > a,
@@ -6755,7 +6755,7 @@ a,
 	--color-hover: #555555;
 }
 .blue{
-	--color-hover: #00b5cc;
+	--color-hover: #2779B2;
 }
 .pink{
 	--color-hover: #ef2c75;
@@ -11293,6 +11293,7 @@ button.scroltop {
 	-webkit-transition: all 0.8s;
 	-ms-transition: all 0.8s;
 	-o-transition: all 0.8s;
+    opacity: 0.3;
 }
 button.scroltop.style3:after,
 button.scroltop.style2:after,
@@ -13006,7 +13007,7 @@ ol.commentlist li .star-rating {
 		/* padding-bottom: 30px; */
 	}
 	.footer-top{
-		padding-top: 40px;
+		padding: 50px 0 10px 0;
 	}
 	.site-footer .widget{
 		margin-bottom:25px;
@@ -14249,4 +14250,49 @@ ol.commentlist li .star-rating {
 		background: #000;
 		opacity: 0.1;
 	}
+}
+
+.fullscreen-container,
+.rev_slider_wrapper,
+.tp-banner-container,
+.tp-banner {
+  height: 100vh !important; /* Full viewport height */
+  width: 100% !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  /* max-width: 600px; */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.row.equal-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.equal-height > [class*="col-"] {
+  display: flex;
+}
+.icon-bx-wraper {
+  flex: 1;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+.jumbotron-btn:hover {
+  background: var(--color-hover) !important;
 }
