@@ -14296,3 +14296,16 @@ ol.commentlist li .star-rating {
 .jumbotron-btn:hover {
   background: var(--color-hover) !important;
 }
+
+.section-content.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-content .service-box {
+  display: flex;
+}
+.section-content .icon-bx-wraper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
